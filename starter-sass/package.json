@@ -1,0 +1,16 @@
+{
+  "name": "starter-sass-natours",
+  "version": "1.0.0",
+  "description": "SASS Starter",
+  "main": "index.js",
+  "repository": "http://",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Jeremy",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* default is not inherit */
+}
+
+html {
+  /* this defines what 1rem is, the default for most browser is 16px, this is 10px
+  */
+  font-size: 62.5%; 
+}
+
+body {
+  box-sizing: border-box; /* border and padding size are added to the elm size */
+}
