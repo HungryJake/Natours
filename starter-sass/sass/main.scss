@@ -16,12 +16,15 @@
 @import "components/feature-box";
 @import "components/form";
 @import "components/card";
+@import "components/popup";
 @import "components/story";
 
 // layouts
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/navigation";
+
 
 // pages
 @import "pages/home";
