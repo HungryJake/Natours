@@ -7,8 +7,15 @@
       url("../img/hero.jpg");
     background-size: cover; /* auto covers the entire element */
     background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* tl[x,y] tr[x,y], br[x,y], bl[x,y] */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* tl[x,y] tr[x,y], br[x,y], bl[x,y] */
     position: relative;
+
+    @include respond(phone) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); /* tl[x,y] tr[x,y], br[x,y], bl[x,y] */
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); /* tl[x,y] tr[x,y], br[x,y], bl[x,y] */
+    }
+
     &__logo-box {
       position: absolute; /* relative to a parent with relative position */
       top: 4rem;
