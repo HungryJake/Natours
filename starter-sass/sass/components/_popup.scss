@@ -10,6 +10,12 @@
     visibility: hidden;
     transition: all .3s;
 
+    @supports(-webkit-backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+
     &:target { // anchor to target.
         opacity: 1;
         visibility: visible;
@@ -50,7 +56,7 @@
 
     &__img{
         display: block;
-        width: 100%;
+        width: 30rem;
         height: 167px;
         @include respond(tab-port) {
             width: 50%;
