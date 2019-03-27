@@ -15,9 +15,9 @@
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* tl[x,y] tr[x,y], br[x,y], bl[x,y] */
     }
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), /* retina screen */
-           (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), // for safari
-           (min-width: 67.5em) { // or at least 1080px in width
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), /* retina screen */
+           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), // for safari
+           only screen and (min-width: 67.5em) { // or at least 1080px in width
       background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
