@@ -5,12 +5,22 @@
   "main": "index.js",
   "repository": "http://",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "dev": "live-server .",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Jeremy",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.0.5",
+    "helmet": "^3.21.2"
+  },
   "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-node": "^10.0.0",
+    "live-server": "^1.2.1",
+    "liveserver": "^0.1.20",
     "node-sass": "^4.11.0"
   }
 }
